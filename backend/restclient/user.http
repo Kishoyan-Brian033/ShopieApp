@@ -1,0 +1,36 @@
+### Create User
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "name": "John Doe",
+  "password": "password123"
+}
+
+### Get All Users
+GET http://localhost:3000/user
+
+### Get User by ID
+GET http://localhost:3000/user/REPLACE_WITH_USER_ID
+
+### Update User
+PUT http://localhost:3000/user/REPLACE_WITH_USER_ID
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "password": "newpassword123"
+}
+
+### Delete User
+DELETE http://localhost:3000/user/REPLACE_WITH_USER_ID
+
+### Reset Password
+POST http://localhost:3000/user/reset-password
+Content-Type: application/json
+
+{
+  "userId": "REPLACE_WITH_USER_ID",
+  "newPassword": "resetpassword123"
+}
