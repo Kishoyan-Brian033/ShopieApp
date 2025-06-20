@@ -1,0 +1,29 @@
+### Add item to cart
+POST http://localhost:3000/cart/add
+Content-Type: application/json
+
+{
+  "userId": "user-id-placeholder",
+  "productId": "product-id-placeholder",
+  "quantity": 1
+}
+
+### Update cart item quantity
+PATCH http://localhost:3000/cart/update/product-id-placeholder
+Content-Type: application/json
+
+{
+  "userId": "user-id-placeholder",
+  "quantity": 2
+}
+
+### Remove item from cart
+DELETE http://localhost:3000/cart/remove/product-id-placeholder
+Content-Type: application/json
+
+{
+  "userId": "user-id-placeholder"
+}
+
+### Get cart items
+GET http://localhost:3000/cart/items?userId=user-id-placeholder

@@ -1,0 +1,43 @@
+### Register admin user
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "brianmwasbayo@gmail.com",
+  "password": "Brian@2222",
+  "name": "Admin user",
+  "role": "ADMIN"
+}
+
+###Register a user
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "kishoyianbrianmwangi@gmail.com",
+  "password": "Kishoyian@222",
+  "name": "Kishoyian Brian",
+  "role": "USER"
+}
+
+###
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "Kishoyian Brian",
+  "password": "Kishoyian@2222"
+}
+
+###
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "brianmwasbayo@gmail.com",
+  "password": "Mel143"
+}
