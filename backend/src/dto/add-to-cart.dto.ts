@@ -1,6 +1,4 @@
-import { IsNotEmpty } from 'class-validator';
-
-mport { IsNotEmpty, IsString, IsNumber, Min } from 'class-validator';
+import { IsNotEmpty, IsString, IsNumber, Min } from 'class-validator';
 
 export class AddToCartDto {
   @IsNotEmpty({ message: 'Product ID is required' })
